@@ -10,18 +10,14 @@ VAR title = "Amelia"
     -> TellMeMore
 + [What is ocean pollution?]
     -> WhatIsOcean
-{TellMeMore:
-+ [What are the benefits of beach cleanup programs?] 
++ {TellMeMore} [What are the benefits of beach cleanup programs?] 
     -> BenefitsOfProgram
-+ [What can I do to help prevent beach pollution?] 
++ {TellMeMore} [What can I do to help prevent beach pollution?] 
     -> PreventPollution
-+ [What are the biggest challenges facing beach cleanup programs?] 
++ {TellMeMore} [What are the biggest challenges facing beach cleanup programs?] 
     -> BiggestChallenges
-}
-{WhatIsOcean:
-+ [What are the biggest sources of ocean pollution?] 
++ {WhatIsOcean} [What are the biggest sources of ocean pollution?] 
     -> PreventPollution
-}
 + [Let's get started]
     -> GetStarted
 

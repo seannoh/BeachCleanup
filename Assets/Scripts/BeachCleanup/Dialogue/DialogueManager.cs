@@ -101,6 +101,10 @@ public class DialogueManager : SingletonMonoDrag<DialogueManager>
         {
             string line = story.Continue();
             line = line.Trim();
+            if(line == "") {
+                RefreshView();
+                return;
+            }
 
             // display dialogue title and body using TextTyper
             if (currentTitle != (string)story.variablesState["title"])
@@ -160,7 +164,7 @@ public class DialogueManager : SingletonMonoDrag<DialogueManager>
                 {
                     // go to choice index
                     story.ChooseChoiceIndex(choice.index);
-                    story.Continue();
+                    // story.Continue();
                     RefreshView();
                 });
             }

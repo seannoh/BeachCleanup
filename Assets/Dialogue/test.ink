@@ -1,3 +1,5 @@
+VAR title = "Test Dialogue"
+
 -> StartDialogue
 
 === StartDialogue ===
@@ -22,5 +24,9 @@ This is the text for choice 2
 === EndDialogue ===
 {Choice1: You picked choice 1|You didn't pick choice 1}
 {Choice2: You picked choice 2|You didn't pick choice 2}
-+ [Restart] -> StartDialogue
++ Restart -> Restart
 + [End] -> END
+
+=== Restart ===
+Restart
+-> StartDialogue

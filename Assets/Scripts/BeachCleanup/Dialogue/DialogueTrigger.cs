@@ -19,9 +19,9 @@ public class DialogueTrigger : MonoBehaviour
         {
             animator.SetBool("PlayerInRange", true);
 
-            if(InputManager.Instance.GetInteractPressed())
+            if(Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("Interact Pressed" + inkJsonAsset.text);
+                EventMgr.Instance.EventTrigger("DialogueStart", inkJsonAsset);
             }
         } else {
             animator.SetBool("PlayerInRange", false);

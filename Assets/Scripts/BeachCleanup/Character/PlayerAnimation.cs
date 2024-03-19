@@ -21,7 +21,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void HandleAnimation()
     {
-        Vector2 moveDirection = InputManager.Instance.GetMoveDirection();
+        Vector2 moveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
         
         if (moveDirection.x != 0 || moveDirection.y != 0)
         {

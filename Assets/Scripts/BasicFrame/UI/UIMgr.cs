@@ -113,14 +113,14 @@ public class UIMgr : Singleton<UIMgr>
                     break;
             }
 
-            panel.transform.SetParent(currPanel); //set panel to be child object of selected layer
+            panel.transform.SetParent(currPanel, false); //set panel to be child object of selected layer
             
-            //Set position and scale to default 
-            panel.transform.localPosition = Vector3.zero;
-            panel.transform.localScale = Vector3.one;
+            // //Set position and scale to default 
+            // panel.transform.localPosition = Vector3.zero;
+            // panel.transform.localScale = Vector3.one;
             
-            (panel.transform as RectTransform).offsetMax= Vector2.zero;
-            (panel.transform as RectTransform).offsetMin= Vector2.zero;
+            // (panel.transform as RectTransform).offsetMax= Vector2.zero;
+            // (panel.transform as RectTransform).offsetMin= Vector2.zero;
             
             T panelComponent = panel.GetComponent<T>(); //Get the script on the component
 

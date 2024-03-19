@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleMovement()
     {
-        moveDirection = InputManager.Instance.GetMoveDirection();
+        moveDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         rb.MovePosition(rb.position + moveDirection * moveSpeed * Time.fixedDeltaTime);
     }
 

@@ -21,6 +21,10 @@ public class DialogueTrigger : MonoBehaviour
 
             if(Input.GetKeyDown(KeyCode.E))
             {
+                Item item = transform.parent.GetComponent<Item>();
+                if(item != null) {
+                    Inventory.Instance.itemToBePickedUp = item;
+                }
                 EventMgr.Instance.EventTrigger("DialogueStart", inkJsonAsset);
             }
         } else {

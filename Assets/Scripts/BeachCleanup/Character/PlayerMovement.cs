@@ -30,7 +30,9 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        HandleMovement();
+        if(DialogueManager.Instance.isDialogueActive == false) {
+            HandleMovement();
+        }
     }
 
     private void HandleMovement()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Ink.Runtime;
 using RedBlueGames.Tools.TextTyper;
 using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -51,8 +52,39 @@ public class DialogueManager : SingletonMonoDrag<DialogueManager>
         
     }
 
+    private void UpdateStoryInvItems()
+    {
+        for(int i = 0; i < 4; i++) {
+            story.variablesState["invItem" + (i + 1)] = "";
+        }
+        for(int i = 0; i < Inventory.Instance.items.Count; i++) {
+            story.variablesState["invItem" + (i + 1)] = Inventory.Instance.items[i].itemName;
+        }
+    }
+
     private void InitializeVariables()
     {
+        if((string)story.variablesState["title"] == "Pickup"){
+            story.variablesState["itemName"] = Inventory.Instance.itemToBePickedUp.itemName;
+        }
+        if((string)story.variablesState["title"] == "Alex") {
+            UpdateStoryInvItems();
+
+            story.BindExternalFunction<int>("chooseItem", (itemIndex) => {
+                if(itemIndex == -1) {
+                    if(Inventory.Instance.totalItemsTurnedIn >= Inventory.Instance.totalItems) {
+                        story.ChoosePathString("GameEnd");
+                        return;
+                    }
+                    Inventory.Instance.itemToBeTurnedIn = null;
+                    UpdateStoryInvItems();
+                } else {
+                    Inventory.Instance.itemToBeTurnedIn = Inventory.Instance.items[itemIndex - 1];
+                    Inventory.Instance.RemoveItem(itemIndex - 1);
+                    Inventory.Instance.totalItemsTurnedIn++;
+                }
+            });
+        }
         // Player.Instance.UpdateHappiness((int)story.variablesState["happiness"]);
         // story.ObserveVariable("happiness", (name, happiness) =>
         // {
@@ -205,6 +237,20 @@ public class DialogueManager : SingletonMonoDrag<DialogueManager>
 
     private void DialogueEnd()
     {
+
+        if((string)story.variablesState["title"] == "Pickup" && (bool)story.variablesState["pickedUp"] == true)
+        {
+            if(Inventory.Instance.AddItem(Inventory.Instance.itemToBePickedUp)){
+                Inventory.Instance.itemToBePickedUp.PickUp();
+            } else {
+                EventMgr.Instance.EventTrigger("ShowNotification", "Inventory full");
+            }
+        }
+        Inventory.Instance.itemToBePickedUp = null;
+        if((string)story.variablesState["title"] == "Alex" && (bool)story.variablesState["gameEnd"] == true)
+        {
+            SceneMgr.Instance.LoadSceneAsync("GameOverScene", () => { });
+        }
         isDialogueActive = false;
         UIMgr.Instance.HidePanel("DialoguePanel");
     }

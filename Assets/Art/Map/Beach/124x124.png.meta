@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +121,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: 124x124_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aae2b6620bad824990ab2a52ca70fe5
+      internalID: 625704163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 124x124_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999c05c1630588845ae3820ec59a7542
+      internalID: 756480022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 124x124_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfda7d7cd77484f44830b9b9ac07e00a
+      internalID: 1237134042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 124x124_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bee9e1563820da48ae3010371047f65
+      internalID: -303199062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 124x124_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c3c9e3ca8444a4fbb6e794b9033c89
+      internalID: 1099975374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 124x124_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e8155af8ced2d4ba795e15664b2b70
+      internalID: -1575135221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 124x124_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a70f5622c078045b664f5df7d72786
+      internalID: 986426381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +279,71 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      124x124_0: -469347004
+      124x124_1: 457083591
+      124x124_10: 1753911645
+      124x124_11: -1835460650
+      124x124_12: -1539277622
+      124x124_13: 1837626319
+      124x124_14: 2002211358
+      124x124_15: 1429266379
+      124x124_16: 625704163
+      124x124_17: 756480022
+      124x124_18: 1506431950
+      124x124_19: 1105581756
+      124x124_2: 1423023053
+      124x124_20: -1718923851
+      124x124_21: -962976021
+      124x124_22: 1746089761
+      124x124_23: 1736550402
+      124x124_24: 1237134042
+      124x124_25: 1313279128
+      124x124_26: -373704165
+      124x124_27: -1203030024
+      124x124_28: -1188144220
+      124x124_29: -285109059
+      124x124_3: -1891506175
+      124x124_30: 1200272035
+      124x124_31: 773690178
+      124x124_32: -303199062
+      124x124_33: 1099975374
+      124x124_34: 1163997776
+      124x124_35: -1522646124
+      124x124_36: 1929461625
+      124x124_37: -379387237
+      124x124_38: 1184138230
+      124x124_39: -741696669
+      124x124_4: 343856723
+      124x124_40: -1575135221
+      124x124_41: 986426381
+      124x124_42: 509250573
+      124x124_43: 1808403225
+      124x124_44: -952503446
+      124x124_45: 13420063
+      124x124_46: 1633071583
+      124x124_47: 1207857684
+      124x124_48: 1435651022
+      124x124_49: -878932620
+      124x124_5: -1162536776
+      124x124_50: -1215755421
+      124x124_51: 62444882
+      124x124_52: -583982272
+      124x124_53: 85157990
+      124x124_54: -2079871517
+      124x124_55: -1718203634
+      124x124_56: 451396102
+      124x124_57: 478475319
+      124x124_58: 2101497918
+      124x124_59: 897711446
+      124x124_6: -688618123
+      124x124_60: -1233884975
+      124x124_61: 2106775229
+      124x124_62: -471319491
+      124x124_63: -1384685001
+      124x124_7: -739463386
+      124x124_8: 184055899
+      124x124_9: 937198214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

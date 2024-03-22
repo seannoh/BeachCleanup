@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Ink.Runtime;
 using RedBlueGames.Tools.TextTyper;
 using TMPro;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
 

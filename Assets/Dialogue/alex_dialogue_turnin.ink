@@ -36,15 +36,15 @@ You turn in {item}
 ->StartDialogue
 
 === bottleDialogue ===
-Bottle dialogue
+
 -> StartDialogue
 
 === canDialogue ===
-Can dialogue
+
 -> StartDialogue
 
 === ringsDialogue ===
-Rings dialogue
+
 -> StartDialogue
 
 === GameEnd ===

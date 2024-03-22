@@ -20839,7 +20839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20921,7 +20921,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Over text
+  m_text: "Congratulations! You've cleaned up the beach completely. Beach pollution
+    is an ongoing problem, but your actions can help solve it. Please look into organizations
+    and programs in you community that deal with ocean pollution and beach pollution
+    and keep in mind how your decisions and actions affect the environment around
+    you. \n\nThanks for playing!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ba155bd4378f54149a82341b79a18a0f, type: 2}
   m_sharedMaterial: {fileID: -6295600995330085951, guid: ba155bd4378f54149a82341b79a18a0f, type: 2}

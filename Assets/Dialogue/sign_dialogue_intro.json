@@ -1,1 +1,1 @@
-﻿{"inkVersion":21,"root":[[["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}
+﻿{"inkVersion":21,"root":[[{"->":"StartDialogue"},["done",{"#f":5,"#n":"g-0"}],null],"done",{"StartDialogue":[["^Welcome to Medialuna Beach. Enjoy our pristine sands and crystal waters. Beach entrance to the south.","\n","ev","str","^Exit","/str","/ev",{"*":".^.c-0","flg":20},{"c-0":["^ ","end","\n",{"#f":5}]}],{"#f":1}],"global decl":["ev","str","^Sign","/str",{"VAR=":"title"},"/ev","end",null],"#f":1}],"listDefs":{}}
